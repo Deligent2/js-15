@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.section {
+    background-color: teal;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container {
+    height: 80%;
+    width: 50%;
+    margin: 0 15px;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+
+}
+
+
+input {
+    background-color: teal;
+    border: none;
+    padding: 12px 30px;
+    outline: none;
+    color: orange;
+}
+
+input::placeholder {
+    color: orange;
+    border: none;
+}
+
+#save-btn {
+    background-color: blueviolet;
+    border: none;
+    color: #fff;
+    padding: 6px 12px;
+    margin: 0 60px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.checkbox {
+cursor: pointer;
+
+}
+
+.div {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
