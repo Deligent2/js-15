@@ -9,48 +9,34 @@
 </head>
 
 <body>
-    
     <div class="section">
         <div class="container">
-            <div class="from-wrapper">
-                <form id="Form">
-                    <label for="email">
-                        Адрес элю почты:
-                    </label>
-                    <input type="email" placeholder="Email" class="email">
-                    <label for="text">
-                        Фамилия:
-                    </label>
+            <div class="form-wrapper">
+                <form id="Form" onsubmit="validateForm(event)">
+                    <label for="text">Фамилия:</label>
                     <input type="text" placeholder="Last name" class="l_name">
 
-                    <label for="text">
-                        Имя:
-                    </label>
+                    <label for="text">Имя:</label>
                     <input type="text" placeholder="First name" class="f_name">
 
-                    <label for="text">
-                        Имя пользователя:
-                    </label>
+                    <label for="text">Имя пользователя:</label>
                     <input type="text" placeholder="User name" class="U_name">
 
-                    <label for="password">
-                        Пароль:
-                    </label>
-                    <input type="password" placeholder="password" value="FakePSW" id="myInput" class="password">
+                    <label for="email">Адрес эл. почты:</label>
+                    <input type="email" placeholder="Email" class="email">
 
-                    <label for="password">
-                        Подтвердиете пароль:
-                    </label>
+                    <label for="password">Пароль:</label>
+                    <input type="password" placeholder="password" value="FakePSW" id="myInput" class="Password">
+
+                    <label for="password">Подтвердиете пароль:</label>
                     <input type="password" value="FakePSW" id="myInput_1" placeholder="Confirm your password"
                         class="password_2">
 
                     <div class="div">
-                        <input class="checkbox" type="checkbox" onclick="myFunction() ">
-                        <label for="checkbox">
-                            Показать пароль
-                        </label>
+                        <input class="checkbox" type="checkbox" onclick="myFunction()">
+                        <label for="checkbox">Показать пароль</label>
                     </div>
-                    <button id="save-btn">Save</button>
+                    <button id="save-btn" type="submit">Save</button>
                 </form>
             </div>
         </div>
